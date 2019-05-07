@@ -1,0 +1,35 @@
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.imgDiv{
+    position: relative;
+    width: 700px;
+    margin: auto;
+}
+.imgDiv::before{
+    content: "";
+    width: 50%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 0;
+    transition: all 0.3s;
+    position: absolute;
+}
+.imgDiv:hover::before{
+    height: 100%;
+}
+.imgDiv::after{
+    content: "";
+    width: 50%;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+    height: 0;
+    transition: all 0.3s;
+    position: absolute;
+    right: 0
+}
+.imgDiv:hover::after{
+    height: 100%;
+
+}
